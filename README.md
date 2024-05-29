@@ -17,6 +17,8 @@ double get_runtime(const int N) {
 }
 ```
 
+计时程序运行时开启 O2 优化，我会对程序做调整，保证编译器不将运算过程视为死代码块。
+
 ## GCD
 
 核心运算如下：
@@ -36,3 +38,5 @@ unsigned func(const int N) {
 2. 更相减损法（带优化）；
 3. 基于值域预处理的快速 GCD （不计预处理）；
 4. 取模（不是 GCD 算法，用于对照）。
+
+![GCD 运行图象](Figure/Figure_gcd.png)
