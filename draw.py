@@ -11,7 +11,8 @@ def read_data(fn: str):
         t = list(zip(*map(lambda s: tuple(map(float, s.split())), d.strip().split('\n'))))
         return np.array(t[0]), np.array(t[1])
 
-def show(*files):
+def show(title, *files):
+    plt.title(title)
     plt.xlabel('N')
     plt.ylabel('t/us')
     print(sum(map(read_data, files), ()))

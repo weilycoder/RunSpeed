@@ -1,5 +1,7 @@
 # 对各类算法实际运行速度的研究
 
+[![Page Views Count](https://badges.toozhao.com/badges/01HYYWYQBB14JMAN1FF6XZGFMW/blue.svg)](https://badges.toozhao.com/stats/01HYYWYQBB14JMAN1FF6XZGFMW) ![GitHub License](https://img.shields.io/github/license/weilycoder/RunSpeed)
+
 项目所用计时函数如下：
 
 ```cpp
