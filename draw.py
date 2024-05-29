@@ -15,6 +15,5 @@ def show(title, *files):
     plt.title(title)
     plt.xlabel('N')
     plt.ylabel('t/us')
-    print(sum(map(read_data, files), ()))
     plt.plot(*sum(map(read_data, files), ()))
     plt.show()

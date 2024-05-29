@@ -17,7 +17,28 @@ double get_runtime(const int N) {
 }
 ```
 
-计时程序运行时开启 O2 优化，我会对程序做调整，保证编译器不将运算过程视为死代码块。
+如无说明，计时程序运行时开启 O2 优化，我会对程序做调整，保证编译器不将运算过程视为死代码块。
+
+## 基本运算
+
+核心运算如下：
+
+```cpp
+unsigned func(const int N) {
+  unsigned r = 0;
+  for (int i = 1; i <= N; ++i)
+    for (int j = 1; j <= N; ++j)
+      r += oper(i, j);
+  return r;
+}
+```
+
+按用时升序排列：
+1. 加法（与减法同级）
+2. 乘法
+3. 除法（与取模同级）
+
+![GCD 运行图象](Figure/Figure_oper.png)
 
 ## GCD
 
